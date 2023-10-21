@@ -4,7 +4,7 @@
 ![Дизайн без названия (5)](https://github.com/NastyaZiss/hack_2023/assets/88962864/f2cc826d-a411-4b58-a701-d12087d9daeb)
 
 РЕАЛИЗОВАНО КРОССПЛАТФОРМЕННОЕ ПРИЛОЖЕНИЕ:
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/08295aa7-518a-4c4b-ab36-1e89dd71a5ec)
+![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/bd433170-359f-48e5-827c-b8501af93c08)
 
 ![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/30c1783a-8dfb-447d-bd0e-8881e358093f)
 
