@@ -1,8 +1,9 @@
 # axenix_mov
 Команда: CoffeeDose
 Кейс: Мониторинг автоматизированного склада
+![Дизайн без названия (5)](https://github.com/NastyaZiss/hack_2023/assets/88962864/f2cc826d-a411-4b58-a701-d12087d9daeb)
 
-![Uploading movement.gif…]()
+
 
 
 
