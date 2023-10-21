@@ -41,31 +41,44 @@ class _HomeScreenState extends State<HomeScreen> {
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(30.0), // here the desired height
               child: AppBar(
-                titleTextStyle: TSC.boldTitlePhone.copyWith(color: Colors.black),
+                titleTextStyle:
+                    TSC.boldTitlePhone.copyWith(color: Colors.black),
                 title: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    DropList(
+                    SizedBox(
+                      height: 30,
 
-
-                      list: [], onChanged: (String) {  },
-                    ),
-                    // Text(
-                    //   'Карта отображений',
-                    // ),
-                    // SizedBox(
-                    //   width: 30,
-                    // ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: ButtonAppBarDisible(
-                        small: true,
-                        text: 'Аналитика',
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/a');
-                        },
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 3),
+                        child: Image.asset('assets/logo5.png'),
                       ),
-                    )
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        DropList(
+                          list: [],
+                          onChanged: (String) {},
+                        ),
+                        // Text(
+                        //   'Карта отображений',
+                        // ),
+                        // SizedBox(
+                        //   width: 30,
+                        // ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 20),
+                          child: ButtonAppBarDisible(
+                            small: true,
+                            text: 'Аналитика',
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/a');
+                            },
+                          ),
+                        )
+                      ],
+                    ),
                   ],
                 ),
                 elevation: 2,
@@ -73,8 +86,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             body: Padding(
-              padding:
-                  const EdgeInsets.only(left: 15, right: 20, top: 20, bottom: 10),
+              padding: const EdgeInsets.only(
+                  left: 15, right: 20, top: 20, bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [

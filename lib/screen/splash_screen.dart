@@ -9,14 +9,14 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return EasySplashScreen(
-    logo: Image.asset(
-    'assets/logo.gif',
-    ),
-    logoWidth: 100,
-    // gradientBackground: Gradient.lerp(c, b, t),
-    showLoader: false,
-    durationInSeconds: 3,
-    navigator:HomeScreen(),
+      logo: Image.asset(
+        'assets/Axenix.gif',
+      ),
+      logoWidth: 100,
+      // gradientBackground: Gradient.lerp(c, b, t),
+      showLoader: false,
+      durationInSeconds: 3,
+      navigator: HomeScreen(),
     );
   }
 }

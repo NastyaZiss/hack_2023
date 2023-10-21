@@ -135,7 +135,7 @@ class _AnaliticalState extends State<Analitical> {
                 border: TableBorder.all(
                   width: 1,
                   borderRadius: BorderRadius.circular(10),
-                  color: TSC.baseLigt,
+                  color: Colors.white38,
                 ),
                 columns: _createColumns(),
                 rows: _createRows()),
