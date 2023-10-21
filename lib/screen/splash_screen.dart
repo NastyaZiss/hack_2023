@@ -8,11 +8,13 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final h = MediaQuery.of(context).size.height;
+
     return EasySplashScreen(
       logo: Image.asset(
-        'assets/Axenix.gif',
+        'assets/Axenix2.gif',
       ),
-      logoWidth: 100,
+      logoWidth: h/3,
       // gradientBackground: Gradient.lerp(c, b, t),
       showLoader: false,
       durationInSeconds: 3,
