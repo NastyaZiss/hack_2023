@@ -58,7 +58,7 @@ class _AnaliticalState extends State<Analitical> {
         child: Expanded(
           child: Container(
             decoration: BoxDecoration(
-              color:  TSC.base.withOpacity(0.5),
+              color: TSC.base.withOpacity(0.5),
               borderRadius: const BorderRadius.all(Radius.circular(20)),
             ),
             child: Padding(
@@ -86,8 +86,11 @@ class _AnaliticalState extends State<Analitical> {
                             child: Container(
                               child: ExpansionTile(
                                 backgroundColor: TSC.base,
-                                title: Text('Пройденное расстояние', style: TSC.boldh2.copyWith(color: Color(0xffA34B0D)),),
-
+                                title: Text(
+                                  'Пройденное расстояние',
+                                  style: TSC.boldh2
+                                      .copyWith(color: Color(0xffA34B0D)),
+                                ),
                                 children: [
                                   _createDataTable(),
                                 ],
@@ -120,18 +123,20 @@ class _AnaliticalState extends State<Analitical> {
           ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(10)),
             child: DataTable(
-              headingRowHeight: 40,
-              dataRowHeight: 40,
-              headingTextStyle: TSC.boldh2,
-              dataTextStyle: TSC.boldh3,
-decoration: BoxDecoration(color:TSC.baseLigt, ),
+                headingRowHeight: 40,
+                dataRowHeight: 40,
+                headingTextStyle: TSC.boldh2,
+                dataTextStyle: TSC.boldh3,
+                decoration: BoxDecoration(
+                  color: TSC.baseLigt,
+                ),
                 dataRowColor:
                     MaterialStateColor.resolveWith((states) => TSC.baseLigt2),
                 border: TableBorder.all(
                   width: 1,
-                    borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                   color: TSC.baseLigt,
-                    ),
+                ),
                 columns: _createColumns(),
                 rows: _createRows()),
           ),
