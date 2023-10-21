@@ -2,7 +2,8 @@
 Команда: CoffeeDose
 Кейс: Мониторинг автоматизированного склада
 
-![Group 94](https://github.com/NastyaZiss/hack_2023/assets/88962864/8568ad43-e6e0-4030-810d-256d6afa58de)
+![Uploading movement.gif…]()
+
 
 
 Реализованно:
