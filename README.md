@@ -1,16 +1,33 @@
 # axenix_mov
+Команда: CoffeeDose
+Кейс: Мониторинг автоматизированного склада
 
-A new Flutter project.
+Реализованно:
 
-## Getting Started
+---------backend--------
+1) получение данных  из скрипта и имитация движения погрузчиков (с сохранением в БД)
+2) передача данных о погрузчиках через сокеты, остальные данные через http
 
-This project is a starting point for a Flutter application.
+Стек: fastapi, sqlalchemy, python, postgresql, docker
+---------frontend-------
+1) гибкий интерфейс
+2) выбор склада
+3) панель (схема) отслеживания перемещения погрузчиков
+4) панель для отображения данных о:
+  - погрузчиках ( идентификатор, статус, номер заказа, последнее ТО, следующее ТО)
+  - контрольных точек* (общее количество проходов, количество проходов определённого погрузчика)
+  - заказов* (идентификатор, статус заказа, номер погрузчика, время выполнения)
+  - выходе из строя контрольной точки*
+(данные открываются по клику на объект на схеме)
 
-A few resources to get you started if this is your first Flutter project:
+Стек: flutter
+---------аналитика---------
+  - выбор погрузчика (определённый или все)
+  - выбор промежутка времени
+  - пройденное расстояние
+  - выполненные заказы
+  - время проведённое в движении
+  - время нахождения в каждом из статусов (ожидание, поездка до заказа, возвращение с заказом)
+  - реализованно в виде таблиц
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* - дополнительные задачи
