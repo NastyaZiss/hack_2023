@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../style.dart';
-import 'buttons_forklift.dart';
+import 'forklift.dart';
 
 class Panel extends StatelessWidget {
   const Panel({super.key});

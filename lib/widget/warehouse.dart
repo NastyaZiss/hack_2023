@@ -1,9 +1,8 @@
 import 'package:axenix_mov/widget/k.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:layout/layout.dart';
-
 import '../style.dart';
+import 'forklift.dart';
 import 'line.dart';
 
 class Warehouse extends StatelessWidget {
@@ -62,7 +61,7 @@ class Ware extends StatelessWidget {
           ),
           child: InteractiveViewer(
             panEnabled: false, // Set it to false
-            boundaryMargin: EdgeInsets.all(100),
+            boundaryMargin: const EdgeInsets.all(100),
             minScale: 0.5,
             maxScale: 2,
             child: Stack(
@@ -124,6 +123,14 @@ class Ware extends StatelessWidget {
                               width: 10,
                             ),
                           ),
+                          // Positioned(
+                          //   top: 20,
+                          //   left: 30,
+                          //   child: Forklifit(
+                          //
+                          //   ),
+                          // ),
+
                           Positioned(
                             top: 20,
                             left: 80,
@@ -333,6 +340,8 @@ class Ware extends StatelessWidget {
                               width: 40,
                             ),
                           ),
+
+
                         ],
                       ),
                     ),

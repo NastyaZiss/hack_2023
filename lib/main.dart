@@ -23,7 +23,10 @@ class MyApp extends StatelessWidget {
       title: 'Axenix Mov',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+
         appBarTheme: AppBarTheme(
+          color: Colors.white,
+
           elevation: 2,
           titleTextStyle: GoogleFonts.inter(
               textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),

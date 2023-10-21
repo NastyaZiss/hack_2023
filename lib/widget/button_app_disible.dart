@@ -1,13 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../style.dart';
 
 class ButtonAppBarDisible extends StatelessWidget {
-  const ButtonAppBarDisible({super.key, required this.small, required this.text, required this.onPressed});
+  const ButtonAppBarDisible(
+      {super.key,
+      required this.small,
+      required this.text,
+      required this.onPressed});
   final bool small;
   final String text;
-  final  Function()? onPressed;
+  final Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class ButtonAppBarDisible extends StatelessWidget {
           ),
           Text(
             text,
-            style: small? TSC.boldTitlePhone: TSC.boldTitle,
+            style: small ? TSC.boldTitlePhone : TSC.boldTitle,
           )
         ],
       ),

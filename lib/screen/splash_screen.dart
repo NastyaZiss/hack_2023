@@ -18,7 +18,7 @@ class SplashScreen extends StatelessWidget {
       // gradientBackground: Gradient.lerp(c, b, t),
       showLoader: false,
       durationInSeconds: 3,
-      navigator: HomeScreen(),
+      navigator: const HomeScreen(),
     );
   }
 }
