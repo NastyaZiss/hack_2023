@@ -122,7 +122,7 @@ class Ware extends StatelessWidget {
                           child: Transform.scale(
                             scale: scale,
                             // scaleX: 20,
-                            child: Stack(
+                            child: const Stack(
                               // clipBehavior: Clip.hardEdge,
                               children: [
                                 ///sklad 1

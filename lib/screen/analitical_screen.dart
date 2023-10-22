@@ -147,24 +147,34 @@ class _AnaliticalState extends State<Analitical> {
 
   List<DataColumn> _createColumns() {
     return [
-      DataColumn(label: Text('ID')),
-      DataColumn(label: Text('Book')),
-      DataColumn(label: Text('Author'))
+      DataColumn(label: Text('Дни')),
+      DataColumn(label: Text('1')),
+      DataColumn(label: Text('2')),
+
+      DataColumn(label: Text('3')),
+      DataColumn(label: Text('4')),
+      DataColumn(label: Text('5')),
+      DataColumn(label: Text('6')),
+
+      DataColumn(label: Text('7')),
     ];
   }
 
   List<DataRow> _createRows() {
     return [
       DataRow(cells: [
-        DataCell(Text('#100')),
-        DataCell(Text('Flutter Basics')),
-        DataCell(Text('David John'))
+        DataCell(Text('Расстояние')),
+        DataCell(Text('25')),
+        DataCell(Text('41')),
+
+        DataCell(Text('98')),
+        DataCell(Text('0')),
+        DataCell(Text('12')),
+        DataCell(Text('23')),
+
+        DataCell(Text('2')),
       ]),
-      DataRow(cells: [
-        DataCell(Text('#101')),
-        DataCell(Text('Dart Internals')),
-        DataCell(Text('Alex Wick'))
-      ])
+
     ];
   }
 }
