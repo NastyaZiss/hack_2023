@@ -1,23 +1,18 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
-import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 
-import '../data/api.dart';
-import '../data/socket_logic.dart';
-
-/// Модель для запроса погрузчиков
-class Warehouses {
+class AllPeople {
   List<People> list;
-  Warehouses({
+  AllPeople({
     required this.list,
   });
 
-  Warehouses copyWith({
+  AllPeople copyWith({
     List<People>? list,
   }) {
-    return Warehouses(
+    return AllPeople(
       list: list ?? this.list,
     );
   }
@@ -28,8 +23,8 @@ class Warehouses {
     };
   }
 
-  factory Warehouses.fromMap(List<dynamic> dataList) {
-    return Warehouses(
+  factory AllPeople.fromMap(List<dynamic> dataList) {
+    return AllPeople(
       list: List<People>.from(
         dataList.map<People>(
           (x) => People.fromMap(x as Map<String, dynamic>),
@@ -40,14 +35,14 @@ class Warehouses {
 
   String toJson() => json.encode(toMap());
 
-  factory Warehouses.fromJson(String source) =>
-      Warehouses.fromMap(json.decode(source));
+  factory AllPeople.fromJson(String source) =>
+      AllPeople.fromMap(json.decode(source));
 
   @override
   String toString() => 'AllPeople(list: $list)';
 
   @override
-  bool operator ==(covariant Warehouses other) {
+  bool operator ==(covariant AllPeople other) {
     if (identical(this, other)) return true;
 
     return listEquals(other.list, list);
@@ -57,7 +52,6 @@ class Warehouses {
   int get hashCode => list.hashCode;
 }
 
-///
 class People {
   int id;
   List<Checkpoint> checkpoints;
@@ -242,12 +236,4 @@ class Forklifts {
 
   @override
   int get hashCode => id.hashCode;
-// }
-// void _incrementCounter() async {
-//   HttpOverrides.global = MyHttpOverrides();
-//   final dynamic people = await ApiReq.getAllPeople();
-//   print(people);
-//   final modelList = AllPeople.fromMap(people);
-//   final peopleInfo = await ApiReq.getInfoPeople(modelList.list.first.checkpoints.first.warehouse_id); //(people.first['checkpoints'] as List).first['warehouse_id'].toString()
-//   print(peopleInfo);
 }

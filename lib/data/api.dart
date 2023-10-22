@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 
 class ApiReq {
 
-  static String basicUrl = 'https://tomioka.ru:6078/warehouses/1/';
+  static String basicUrl = 'https://tomioka.ru:6078';
 
   static Future<dynamic> getAllPeople() async {
     final String url = '$basicUrl/warehouses';
