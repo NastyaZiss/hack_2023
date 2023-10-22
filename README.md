@@ -4,6 +4,8 @@
 
 Кейс: Мониторинг автоматизированного склада
 
+![movement (3)](https://github.com/NastyaZiss/hack_2023/assets/88962864/1ef5b869-ff17-4643-b2a3-13ec1ca2f0e3)
+
 <h3 align="left">Реализованно<a href="https://daniilshat.ru/" target="_blank"></a></h3>
 
 <b>backend</b>
