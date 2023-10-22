@@ -1,38 +1,63 @@
-# axenix_mov
+<h1 align="center">Хакатон Осень 2023<a href="https://daniilshat.ru/" target="_blank"></a> 
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 Команда: CoffeeDose
+
 Кейс: Мониторинг автоматизированного склада
-![Дизайн без названия (5)](https://github.com/NastyaZiss/hack_2023/assets/88962864/f2cc826d-a411-4b58-a701-d12087d9daeb)
 
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/bd433170-359f-48e5-827c-b8501af93c08)
+<h3 align="left">Реализованно<a href="https://daniilshat.ru/" target="_blank"></a></h3>
 
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/30c1783a-8dfb-447d-bd0e-8881e358093f)
+<b>backend</b>
+```
+  - получение данных  из скрипта и имитация движения погрузчиков (с сохранением в БД)
+  - передача данных о погрузчиках через сокеты, остальные данные через http
+```
 
+:hammer_and_wrench: Стек:  fastapi, sqlalchemy, python, postgresql, docker
 
-1) получение данных  из скрипта и имитация движения погрузчиков (с сохранением в БД)
-2) передача данных о погрузчиках через сокеты, остальные данные через http
-
-Стек: fastapi, sqlalchemy, python, postgresql, docker
-
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/3912d6f9-116c-4256-8b4d-bc4cf757af42)
-
+<b>frontend</b>
+```
+1) гибкий интерфейс
+2) выбор склада
+3) панель (схема) отслеживания перемещения погрузчиков
 4) панель для отображения данных о:
   - погрузчиках ( идентификатор, статус, номер заказа, последнее ТО, следующее ТО)
   - контрольных точек* (общее количество проходов, количество проходов определённого погрузчика)
   - заказов* (идентификатор, статус заказа, номер погрузчика, время выполнения)
   - выходе из строя контрольной точки*
 (данные открываются по клику на объект на схеме)
+```
 
+:hammer_and_wrench: Стек: flutter
 
-
-
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/b831cddf-df49-4487-95d7-83480b7dfb26)
-
-  - выбор погрузчика (определённый или все)
+<b>аналитика</b>
+```
+  - выбор погрузчика (определённый/все)
   - выбор промежутка времени
   - пройденное расстояние
   - выполненные заказы
   - время проведённое в движении
   - время нахождения в каждом из статусов (ожидание, поездка до заказа, возвращение с заказом)
   - реализованно в виде таблиц
+```
 
-* - дополнительные задачи
+\* - дополнительные задачи
+
+
+<b>Примеры работы приложения</b>
+
+С мобильного устройства
+
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/520b4c53-42ba-4831-8df9-4d44d159ae4a)
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/60394185-ec26-4e70-b2b0-c397695ce207)
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/7bdd7808-72ab-430b-a5a8-402a9b76269b)
+
+С экрана компьютера
+
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/3ab01afa-5eb2-44a4-90df-523d1e9b06c9)
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/535e8158-74f7-41f5-b146-6d446fc5b2d6)
+![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/a145e193-c435-429f-bb90-6a6e4f452024)
+
+
+
+
+
