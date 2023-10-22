@@ -47,16 +47,16 @@
 
 <b>Примеры работы приложения</b>
 
-С мобильного устройства в горизонтпльном положении:
+
+С мобильного устройства в горизонтальном положении:
 
 ![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/520b4c53-42ba-4831-8df9-4d44d159ae4a)
 ![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/60394185-ec26-4e70-b2b0-c397695ce207)
 ![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/7bdd7808-72ab-430b-a5a8-402a9b76269b)
 
 Если телефон орентирован вертикально, то приложение просит перевернуть экран.
-![image](https://github.com/NastyaZiss/hack_2023/assets/88962864/eeb6bd2f-bd51-4ef0-b31b-8531db392e79)
 
-
+![Uploading 1.jpg…]()
 С экрана компьютера
 
 ![image](https://github.com/NastyaZiss/hack_2023/assets/96202686/3ab01afa-5eb2-44a4-90df-523d1e9b06c9)
