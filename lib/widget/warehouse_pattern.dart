@@ -49,13 +49,13 @@ class Warehouse extends StatelessWidget {
         left: 90,
       ),
       md: (context) => Ware(
-        scale: 1.2,
+        scale: 1.4,
         top: 150,
-        left: 200,
+        left: 300,
       ),
       lg: (context) => Ware(
         top: 300,
-        left: 500,
+        left: 800,
         scale: 2,
       ),
     );
